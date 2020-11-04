@@ -1,0 +1,13 @@
+URxvt.font:     xft:bitstream vera sans mono:size=11
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
