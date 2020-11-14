@@ -1,0 +1,6 @@
+#!/bin/bash
+while true 
+do
+	compiler "$1"
+	sleep 2s
+done
