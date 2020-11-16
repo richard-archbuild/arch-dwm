@@ -1,0 +1,13 @@
+#!/bin/bash
+[ -z "$1" ] && echo "Enter a url" && exit
+links="$(curl -s "$1" | grep -woP 'img src="(.*?)"' | sed 's!.*/!!g;s!"!!g;s/t1/1920x1080/;s!^!wallpaperswide.com/download/!')"
+let num=$(echo "$links" | wc -l)
+let x=1
+
+while [ $x -le $num ] || [ $x -eq $num ]
+do
+	link1="$(echo "$links" | head -"$x" | tail -1 )"
+	wget -q -nc "$link1"
+	echo "Downloading: $link1"
+	((x++))
+done
