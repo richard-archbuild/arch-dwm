@@ -1,0 +1,28 @@
+#Movies must be in their own files
+#Series must be in their own folders, but not neccesarily in any seasonal grouping
+#!/bin/bash
+
+cd "/mnt/ServerDrive"
+choice=$(echo -e "Movies\nSeries"| dmenu)
+cd "$choice"
+
+
+case "$choice" in
+	
+	"Movies")
+		file="$(ls | dmenu -i -l 30)"
+		[ "$file" -z ] && exit
+		[ "$file" == "\..*" ] || mpv "$file" && exit
+		cd "$file"
+		mpv ".*\.mp4|.*\.m4a|.*\.mkv"
+		
+		;;
+	
+	"Series")
+		show="$(ls | dmenu -i -l 30)"
+		[ "$show" -z ] && exit
+		cd "$show"
+		mpv "$(find |dmenu -i -l 10)"
+		
+		;;
+esac
