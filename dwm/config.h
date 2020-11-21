@@ -14,7 +14,39 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=9" };
 static const char dmenufont[]       = "monospace:size=9";
-#include "/home/michael/.cache/wal/colors-wal-dwm.h"
+/*#include "/home/michael/.cache/wal/colors-wal-dwm.h"*/
+
+static const char norm_fg[] = "#b2ceb7";
+
+static const char norm_bg[] = "#0d100d";
+
+static const char norm_border[] = "#7c9080";
+
+static const char sel_fg[] = "#b2ceb7";
+
+static const char sel_bg[] = "#2B714B";
+
+static const char sel_border[] = "#b2ceb7";
+
+static const char urg_fg[] = "#b2ceb7";
+
+static const char urg_bg[] = "#156D47";
+
+static const char urg_border[] = "#156D47";
+
+static const char *colors[][3]      = {
+
+    /*               fg           bg         border                         */
+
+    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
+
+    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
+
+    [SchemeUrg] =  { urg_fg,      urg_bg,    urg_border },
+
+};
+
+
 
 
 /* tagging */
