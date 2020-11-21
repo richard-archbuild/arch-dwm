@@ -1,6 +1,5 @@
 #!/bin/bash
-picom --experimental-backends -b
-wal -i /home/michael/Pictures/Wallpapers/Rotes_Boot.jpg
+#wal -i /home/michael/Pictures/Wallpapers/Rotes_Boot.jpg
 while true 
 do
 	battery="$(acpi | sed -n -e 's/Battery 0: //;s/%.*/%/;s/,//g' -e '1p')"
