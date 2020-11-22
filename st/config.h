@@ -94,68 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-/*#include "/home/michael/.cache/wal/colors-wal-st.h"*/
-
-const char *colorname[] = {
-
-  /* 8 normal colors */
-
-  [0] = "#0d100d", /* black   */
-
-  [1] = "#156D47", /* red     */
-
-  [2] = "#2B714B", /* green   */
-
-  [3] = "#506E61", /* yellow  */
-
-  [4] = "#2F8C53", /* blue    */
-
-  [5] = "#45A34E", /* magenta */
-
-  [6] = "#539B64", /* cyan    */
-
-  [7] = "#b2ceb7", /* white   */
-
-  /* 8 bright colors */
-
-  [8]  = "#7c9080",  /* black   */
-
-  [9]  = "#156D47",  /* red     */
-
-  [10] = "#2B714B", /* green   */
-
-  [11] = "#506E61", /* yellow  */
-
-  [12] = "#2F8C53", /* blue    */
-
-  [13] = "#45A34E", /* magenta */
-
-  [14] = "#539B64", /* cyan    */
-
-  [15] = "#b2ceb7", /* white   */
-
-  /* special colors */
-
-  [256] = "#0d100d", /* background */
-
-  [257] = "#b2ceb7", /* foreground */
-
-  [258] = "#b2ceb7",     /* cursor */
-
-};
-
-/* Default colors (colorname index)
-
- * foreground, background, cursor */
-
- unsigned int defaultbg = 0;
-
- unsigned int defaultfg = 257;
-
- unsigned int defaultcs = 258;
-
- unsigned int defaultrcs= 258;
-
+#include "/home/michael/.cache/wal/colors-wal-st.h"
 
 
 
