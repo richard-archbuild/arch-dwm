@@ -58,12 +58,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
-static const char *termcmd[]  = { "urxvt", NULL };
-static const char *firefox[]  = { "firefox", NULL };
+static const char *termcmd[]  = { "st", NULL };
+static const char *qutebrowser[]  = { "qutebrowser", NULL };
 static const char *scripts[] =  { "/home/michael/Documents/Scripts/ScriptList.sh", NULL };
-static const char *music[] = { "urxvt","-e","cmus", NULL };
-static const char *files[] = { "urxvt","-e","ranger", NULL };
-static const char *walls[] = { "urxvt","-e","ranger","/home/michael/Pictures/Wallpapers", NULL };
+static const char *music[] = { "st","-e","cmus", NULL };
+static const char *files[] = { "st","-e","ranger", NULL };
+static const char *walls[] = { "st","-e","ranger","/home/michael/Pictures/Wallpapers", NULL };
 static const char *randScript[] = { "/home/michael/Documents/Scripts/RandomWord.sh", NULL };
 static const char *fileFind[] = { "/home/michael/Documents/Scripts/FileFind.sh", NULL };
 static const char *sites[] = { "/home/michael/Documents/Scripts/SiteList.sh", NULL };
@@ -75,7 +75,7 @@ static Key keys[] = {
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,   		XK_b,	   spawn, 	   {.v = firefox }},
+	{ MODKEY|ShiftMask,   		XK_b,	   spawn, 	   {.v = qutebrowser }},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = scripts } },
