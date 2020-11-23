@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-#include "/home/michael/.cache/wal/colors-wal-st.h"
+#include "HOME/.cache/wal/colors-wal-st.h"
 
 
 
