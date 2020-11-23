@@ -15,7 +15,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=9" };
 static const char dmenufont[]       = "monospace:size=9";
 
-#include "/home/michael/.cache/wal/colors-wal-dwm.h"
+#include "HOME/.cache/wal/colors-wal-dwm.h"
 
 
 
