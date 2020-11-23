@@ -1,0 +1,21 @@
+set $wallpaper /home/michael/Pictures/Wallpapers/Rotes_Boot.jpg
+
+set $background #0b0b1b
+set $foreground #d1c7d5
+
+set $color0 #0b0b1b
+set $color1 #544A5F
+set $color2 #C63547
+set $color3 #F75763
+set $color4 #34539B
+set $color5 #E97984
+set $color6 #5E97CB
+set $color7 #d1c7d5
+set $color8 #928b95
+set $color9 #544A5F
+set $color10 #C63547
+set $color11 #F75763
+set $color12 #34539B
+set $color13 #E97984
+set $color14 #5E97CB
+set $color15 #d1c7d5

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/michael/Pictures/Wallpapers/Rotes_Boot.jpg"
+let background = "#0b0b1b"
+let foreground = "#d1c7d5"
+let cursor     = "#d1c7d5"
+
+" Colors
+let color0  = "#0b0b1b"
+let color1  = "#544A5F"
+let color2  = "#C63547"
+let color3  = "#F75763"
+let color4  = "#34539B"
+let color5  = "#E97984"
+let color6  = "#5E97CB"
+let color7  = "#d1c7d5"
+let color8  = "#928b95"
+let color9  = "#544A5F"
+let color10 = "#C63547"
+let color11 = "#F75763"
+let color12 = "#34539B"
+let color13 = "#E97984"
+let color14 = "#5E97CB"
+let color15 = "#d1c7d5"
