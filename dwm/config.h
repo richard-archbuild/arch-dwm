@@ -63,10 +63,10 @@ static const char *qutebrowser[]  = { "qutebrowser", NULL };
 static const char *scripts[] =  { "/home/michael/Documents/Scripts/ScriptList.sh", NULL };
 static const char *music[] = { "st","-e","cmus", NULL };
 static const char *files[] = { "st","-e","ranger", NULL };
-static const char *walls[] = { "st","-e","ranger","/home/michael/Pictures/Wallpapers", NULL };
-static const char *randScript[] = { "/home/michael/Documents/Scripts/RandomWord.sh", NULL };
-static const char *fileFind[] = { "/home/michael/Documents/Scripts/FileFind.sh", NULL };
-static const char *sites[] = { "/home/michael/Documents/Scripts/SiteList.sh", NULL };
+static const char *walls[] = { "st","-e","ranger","HOME/Pictures/Wallpapers", NULL };
+static const char *randScript[] = { "HOME/Documents/Scripts/RandomWord.sh", NULL };
+static const char *fileFind[] = { "HOME/Documents/Scripts/FileFind.sh", NULL };
+static const char *sites[] = { "HOME/Documents/Scripts/SiteList.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
