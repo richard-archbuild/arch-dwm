@@ -1,5 +1,5 @@
 #!/bin/bash
-wal -i HOME/Pictures/Wallpapers/Rotes_Boot.jpg
+. ${HOME}/.fehbg
 picom -b
 while true 
 do
