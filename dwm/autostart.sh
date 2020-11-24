@@ -1,5 +1,5 @@
 #!/bin/bash
-. ${HOME}/.fehbg
+. HOME/.fehbg
 picom -b
 while true 
 do
