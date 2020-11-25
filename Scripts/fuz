@@ -1,0 +1,13 @@
+#!/bin/bash
+file=$(find $HOME/Documents $HOME/.config | fzf --reverse --height=40%)
+[ -z "$file" ] && exit
+case "$file" in
+	*pdf|*epub)
+		zathura --fork "$file" && exit
+		;;
+
+	*)
+		cd "$(dirname $file)"
+		vim $file
+		;;
+esac
