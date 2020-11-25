@@ -1,0 +1,14 @@
+#!/bin/bash
+inputFile=$1
+[ -z "$inputFile" ] && exit
+
+case "$inputFile" in  
+
+	*tex|*ms)
+		name=$(sed 's/\..*/.pdf/' <<< "$inputFile")
+		zathura --fork "$name"
+		;;
+	*)
+		st -e "$inputFile"
+		;;
+esac
