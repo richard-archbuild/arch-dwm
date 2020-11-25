@@ -23,9 +23,7 @@ map <C-j> <C-w>j
 
 
 
-
-
-map <C-d> :! zathura --fork %:t:r.pdf<CR><CR>
+map <C-d> :!opener %:p <CR><CR>
 map <C-s> :w<CR>:!compiler %:p<CR> 
 map <C-a> I.EQ<CR><CR>.EN<ESC>ki
 map <space><space> <kDivide><gg><CR>da<i
