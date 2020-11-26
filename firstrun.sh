@@ -42,7 +42,7 @@ cd $HOME
 source .bashrc
 
 cd .st
-sed -i 's!HOME!'"$HOME"'!g' config.h
+sed -i 's!HOME!'"$HOME"'!g' config.h $HOME/.fehbg
 sudo make clean install
 cd ..
 
