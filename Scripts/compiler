@@ -1,7 +1,7 @@
 #!/bin/bash
 inputFile="$( echo $1 | sed 's!~!\/home\/michael!')"
 [ -z "$inputFile" ] && exit
-dir="$(echo '$inputFile' | sed 's![^/]*$!!')"
+dir=$(dirname "$inputFile")
 
 case "$inputFile" in 
 
