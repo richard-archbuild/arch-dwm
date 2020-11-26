@@ -155,7 +155,7 @@ ex ()
 
 
 export PATH=$PATH:~/Documents/Scripts
-(cat /home/michael/.cache/wal/sequences &)
+(cat $HOME/.cache/wal/sequences &)
 
 
 # Shortcuts
