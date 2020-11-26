@@ -3,7 +3,7 @@
 # Run :PlugInstall on first vim usage
 
 
-sudo pacman -S man python-pywal ranger qutebrowser vim iw iwd git xf86-video-intel xorg-server xorg-xinit dmenu noto-fonts cmus acpi libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
+sudo pacman -S man python-pywal ranger qutebrowser vim iw iwd git xf86-video-intel xorg-server xorg-xinit dmenu noto-fonts cmus acpi fzf libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -47,4 +47,9 @@ cd ..
 cd .dwm
 sed -i 's!HOME!'"$HOME"'!g' config.h autostart.sh
 sudo make clean install
+WallpaperChange.sh "$HOME/Pictures/Wallpapers/Rotes_Boot.jpg"
+
+clear
+
+echo ""
 echo "Now Reboot"
