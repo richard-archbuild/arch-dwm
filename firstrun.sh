@@ -22,6 +22,7 @@ chmod +x $HOME/Documents/Scripts/*
 
 cd $HOME
 mv -v arch-dwm/dwm $HOME/.dwm
+mv -v arch-dwm/dmenu $HOME/dmenu
 cd $HOME/.dwm
 chmod +x autostart.sh
 cd $HOME/arch-dwm
@@ -49,6 +50,10 @@ cd ..
 
 cd .dwm
 sed -i 's!HOME!'"$HOME"'!g' config.h autostart.sh
+sudo make clean install
+
+cd $HOME/.dmenu
+sed -i 's!HOME!'"$HOME"'!g' config.h 
 sudo make clean install
 
 clear
