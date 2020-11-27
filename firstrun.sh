@@ -3,7 +3,7 @@
 # Run :PlugInstall on first vim usage
 
 
-sudo pacman -Sq sshfs man python-pywal ranger qutebrowser vim iw iwd git texlive-most xf86-video-intel xorg-server xorg-xinit dmenu noto-fonts cmus acpi fzf libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
+sudo pacman -Sq sshfs man python-pywal ranger qutebrowser vim iw iwd git texlive-most xf86-video-intel xorg-server xorg-xinit noto-fonts cmus acpi fzf libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
@@ -22,7 +22,7 @@ chmod +x $HOME/Documents/Scripts/*
 
 cd $HOME
 mv -v arch-dwm/dwm $HOME/.dwm
-mv -v arch-dwm/dmenu $HOME/dmenu
+mv -v arch-dwm/dmenu $HOME/.dmenu
 cd $HOME/.dwm
 chmod +x autostart.sh
 cd $HOME/arch-dwm
