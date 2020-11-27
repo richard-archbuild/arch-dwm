@@ -4,7 +4,7 @@
 
 [[ $- != *i* ]] && return
 
-
+set -o vi
 # Colour
 
 # import the colors.
