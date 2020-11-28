@@ -1,5 +1,5 @@
 #!/bin/bash
-drive=$( lsblk -lno mountpoint | grep -v "^$\|\/$\|\/boot$"  | dmenu -h 24 -l 5 )
+drive=$( lsblk -no mountpoint | grep -v "^$\|\/$\|\/boot$"  | dmenu -h 24 -l 5 )
 
 sudo umount "$drive" && 
 	{
