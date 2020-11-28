@@ -8,8 +8,8 @@ case "$docType"	in
 	"Latex Document")
 
 fileName=$(echo "" | dmenu -p "Name")
-cd $HOME/Documents/School/TVC/
-cat $HOME/Documents/School/Temp.tex > "$fileName.tex"
+cd $HOME/Documents/
+cat $HOME/Documents/Temp.tex > "$fileName.tex"
 urxvt -e vim "$fileName.tex"
 ;;
 
@@ -17,7 +17,7 @@ urxvt -e vim "$fileName.tex"
 
 fileName=$(echo "" | dmenu -p "Name")
 cd "$HOME/Documents/Scripts/"
-cat $HOME/Documents/School/Bash.txt > "$fileName.sh"
+cat $HOME/Documents/Bash.txt > "$fileName.sh"
 touch "$fileName.sh" 
 urxvt -e vim "$fileName.sh" && chmod +x "$fileName.sh" 
 	;;
@@ -25,8 +25,8 @@ urxvt -e vim "$fileName.sh" && chmod +x "$fileName.sh"
 	"HTML")
 
 fileName=$(echo "" | dmenu -p "Name")
-cd "$HOME/Documents/HTML/"
-cat "$HOME/Documents/HTML/Template.html" >> "$fileName.html"
+cd "$HOME/Documents/"
+cat "$HOME/Documents/Template.html" >> "$fileName.html"
 urxvt -e vim "$fileName.html"
 ;;
 
