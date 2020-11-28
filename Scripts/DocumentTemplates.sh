@@ -1,5 +1,4 @@
 #!/bin/bash
-. "$HOME/.cache/wal/colors.sh"
 docType=$(echo -e "Bash Script\nLatex Document\nHTML" | dmenu -p "Document Type")
 
 
