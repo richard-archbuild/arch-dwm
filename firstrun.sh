@@ -39,8 +39,10 @@ mv -v .fehbg $HOME/.fehbg
 chmod +x $HOME/.fehbg
 chmod +x $HOME/.startup.sh
 cd $HOME
-
+sed -i 's/-h 24//g' $HOME/Documents/Scripts/*
 source .bashrc
+
+
 
 cd .st
 sed -i 's!HOME!'"$HOME"'!g' config.h $HOME/.fehbg
