@@ -3,7 +3,7 @@
 # Run :PlugInstall on first vim usage
 
 
-sudo pacman -Sq sshfs sc man python-pywal ranger qutebrowser vim iw iwd git texlive-most xf86-video-intel xorg-server xorg-xinit noto-fonts cmus acpi fzf libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
+sudo pacman -Sq sshfs sc man python-pywal ranger qutebrowser xclip vim iw iwd git texlive-most xf86-video-intel xorg-server xorg-xinit noto-fonts cmus acpi fzf libxinerama libx11 alsa-utils xorg-xsetroot git zathura zathura-pdf-mupdf keepass feh picom mpv alsa-utils pulseaudio ueberzug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
