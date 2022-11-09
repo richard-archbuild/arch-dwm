@@ -28,4 +28,4 @@ map <C-s> :w<CR>:!compiler %:p<CR>
 map <C-a> I.EQ<CR><CR>.EN<ESC>ki
 map <space><space> <kDivide><gg><CR>da<i
 map <C-g> :Goyo<CR> :set number rnu<CR> 
-autocmd FileType tex map <C-l> :w !detex \| wc -w
+autocmd FileType tex map <C-l> :w !detex \| wc -w <CR>
