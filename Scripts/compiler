@@ -1,5 +1,7 @@
 #!/bin/bash
-inputFile="$( echo $1 | sed 's!~!\/home\/michael!')"
+
+inputFile="$(echo $1 | sed 's!~!'"${HOME}"'!')"
+
 [ -z "$inputFile" ] && exit
 dir=$(dirname "$inputFile")
 
