@@ -105,8 +105,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias Doc='/home/michael/Documents/Scripts/DocTemp'
-alias Subject='source /home/michael/Documents/Scripts/Subjects'
+
 
 
 xhost +local:root > /dev/null 2>&1
